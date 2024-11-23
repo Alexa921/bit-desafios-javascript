@@ -25,3 +25,83 @@ function presentar(nombre, apellido, edad = 100) {
 }
 presentar('Pablo', 'Perez', 20);
 presentar('Pablo', 'Perez');
+
+/*5. Crear una función que reciba dos párametros, un nombre y un apellido y retorne
+el nombre completo, primero el apellido y luego el nombre.*/
+
+function presentate(nombre, apellido) {
+    return `${apellido} ${nombre}`;
+}
+
+let nombreCompanero = presentate('Valentina', 'Restan');
+let nombreCompleto = presentate('Alexandra', 'Restrepo');
+console.log(nombreCompleto);
+console.log(nombreCompanero);
+
+/*6. Crear una función que reciba cuatro párametros, un nombre, una prenda, un
+color y una cantidad y retorne: ____ tiene __ ____ de color ____.
+Ej entrada: pepita, camisas, azul, 2
+Ej salida: Pepita tiene 2 camisas de color azul.*/
+
+function ejemplo(nombre, prenda, color, cantidad) {
+    return `${nombre} tiene ${cantidad} ${prenda} de color ${color}.`;
+}
+
+let ejemplo1 = ejemplo('Pepita', 'camisas', 'azul', 2);
+let ejemplo2 = ejemplo('Juan', 'pantalones', 'negro', 4);
+console.log(ejemplo1);
+console.log(ejemplo2);
+
+/*7. Crear una función para saludar, si la función recibe un nombre,
+imprimir por consola: Hola, ____!
+Si la función no recibe un nombre, imprimir: Hola, desconocido!*/
+
+function saludar(nombre = 'desconocido') {
+    console.log(`Hola, ${nombre}!`);
+}
+saludar('Juan');
+saludar();
+
+//OPERADORES
+
+/*8. Crear cinco funciones, (sumar, restar, multiplicar, dividir, módulo), debe
+recibir 2 números e imprimir el resultado así:
+Ej entrada: 8, 4
+Ej salida: 8 + 4 = 12*/
+
+function sumar(numero1, numero2) {
+    console.log(`${numero1} + ${numero2} = ${numero1 + numero2}`);
+}
+sumar(8, 4);
+sumar(100, 5);
+
+
+function restar(numero1, numero2) {
+    console.log(`${numero1} - ${numero2} = ${numero1 - numero2}`);
+}
+restar(8, 4);
+restar(100, 5);
+
+function multiplicar(numero1, numero2) {
+    console.log(`${numero1} x ${numero2} = ${numero1 * numero2}`);
+}
+multiplicar(8, 4);
+multiplicar(100, 5);
+
+function dividir(numero1, numero2) {
+    console.log(`${numero1} / ${numero2} = ${numero1 / numero2}`);
+}
+dividir(8, 4);
+dividir(100, 5);
+
+function modulo(numero1, numero2) {
+    console.log(`${numero1} % ${numero2} = ${numero1 % numero2}`);
+}
+modulo(8, 4);
+modulo(100, 5);
+
+function potencia(numero1, numero2) {
+    console.log(`${numero1} ^ ${numero2} = ${numero1 ** numero2}`)
+}
+potencia(8, 4);
+potencia(100, 5);
