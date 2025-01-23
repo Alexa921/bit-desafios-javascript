@@ -8,12 +8,17 @@ Ej salida:
 - El nombre ingresado es: 'Pepita'
 - "Si" está autorizado*/
 
-const nombre = prompt('Ingrese su nombre.');
-const edad = prompt('Ingrese su edad.');
-const activo = prompt('Ingrese si esta o no activo.');
-console.log(nombre);
-console.log(edad);
-console.log(activo);
-console.log('El tipo de dato es:' + ' ' + "'" + typeof nombre + "'" + ' ' + "'" + typeof edad + "'" + "'" + ' ' + "'" + typeof activo + "'"); 
-document.write('El valor ingresado es:' + ' ' + "'" + nombre + ' ' + "'" + 'y tiene'+ ' ' + "'" + edad + "'");
-document.write('"' + ' ' + activo + ' ' + '"'  + ' ' + 'esta autorizado');
+
+const datos = prompt("¿Cual es tu nombre?");
+const datos1 = prompt ("¿cual es tu edad?");
+const datos2 = prompt("¿estas activo?");
+
+console.log("El tipo de dato ingresado para nombre es: '" + typeof datos + "'");
+console.log("El tipo de dato ingresado para edad es: '" + typeof datos1 + "'");
+console.log(
+  "El tipo de dato ingresado para activo es: '" + typeof datos2 + "'"
+);
+
+document.write("El nombre ingresado es: '" + datos + "'");
+
+alert('"' + datos2 + '"' + " " + "está autorizado"); 
