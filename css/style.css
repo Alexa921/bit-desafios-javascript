@@ -2,3 +2,21 @@
     color: cornflowerblue;
     font-size: 40px;
 }
+
+#usuario, #contraseña {
+    border-radius: 6px;
+    width: 180px;
+    height: 20px;
+}
+
+.texto-formulario {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#button {
+    margin-top: 30px;
+    width: 100px;
+    height: 30px;
+    border-radius: 6px;
+}
