@@ -1,4 +1,4 @@
-/*25. Solicitar al usuario un número entero positivo, mostrar al usuario los
+/*26. Solicitar al usuario un número entero positivo, mostrar al usuario los
 números desde cero hasta el número ingresado cada número en una linea.*/
 
 let numeroEntero = prompt("Ingrese un número entero y positivo.");

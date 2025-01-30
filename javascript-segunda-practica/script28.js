@@ -7,12 +7,11 @@ Ej salida:
 1 x 0 = 0
 1 x 1 = 1*/
 
-let numeroEntero = prompt("Ingrese un número entero y positivo.");
-while (numeroEntero <= numero) {
-    for (let i = 0; i <= numeroEntero; i++) {
-        document.write(`${i} x ${numeroEntero} = ${i * numero}`);
-        } 
-        numeroEntero++
+let datos1 = parseInt(prompt("Ingrese un numero entero positivo:"));
+for (let i = 0; i <= datos1; i++) {
+  for (let j = 0; j <= 10; j++) {
+    document.write(`${i} x ${j} = ${i * j} <br>`);
+  }
 }
 
 /*No esta listo*/
